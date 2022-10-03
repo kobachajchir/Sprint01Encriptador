@@ -1,5 +1,6 @@
 function encryptText() {
   let text = document.getElementById("inputText").value;
+  text = text.toLowerCase();
   let encryptedText = "";
   for (letter in text) {
     switch (text.charAt(letter)) {
