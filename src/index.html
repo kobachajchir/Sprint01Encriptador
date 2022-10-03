@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge ONE Sprint 01 CHAJCHIR</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="behaviour.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Challenge ONE Sprint 01 CHAJCHIR</h1>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2>Encriptador de texto</h2>
+          <p>
+            Ingrese el texto a encriptar y el algoritmo le devolvera un texto
+            encriptado, puede luego obtener el texto original
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label for="inputText">Texto para encriptar:</label>
+            <input
+              type="text"
+              name="inputText"
+              id="inputText"
+              onkeyup="checkIfBlank()"
+            />
+          </div>
+        </div>
+        <div class="col" id="encryptedDiv">
+          <h3>Texto Encriptado</h3>
+          <p class="encryptedText" id="encryptedText"></p>
+        </div>
+        <div class="col" id="decryptedDiv">
+          <h3>Texto Original</h3>
+          <p class="decryptedText" id="decryptedText"></p>
+        </div>
+      </div>
+      <div class="buttonDiv">
+        <button
+          id="btnEncrypt"
+          onclick="encryptText()"
+          disabled="true"
+          class="myButton"
+        >
+          Encriptar
+        </button>
+      </div>
+      <div class="buttonDiv">
+        <button id="btnDecrypt" onclick="decryptText()" class="myButton">
+          Desencriptar
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

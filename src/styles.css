@@ -1,0 +1,23 @@
+#btnDecrypt {
+  display: none;
+}
+#decryptedDiv,
+#encryptedDiv {
+  display: none;
+  width: 100vw;
+}
+.row,
+.title {
+  display: block;
+  text-align: center;
+}
+.container {
+  align-content: center;
+}
+.buttonDiv {
+  display: flex;
+  justify-content: center;
+}
+.myButton {
+  margin: 10px;
+}
